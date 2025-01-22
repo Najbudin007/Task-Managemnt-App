@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Project::factory()
-            ->has(Task::factory()->count(20)) // it will generate each project task tasks
+            ->has(Task::factory()->count(2)) // it will generate each project task tasks
             ->count(10)->create();
     }
 }

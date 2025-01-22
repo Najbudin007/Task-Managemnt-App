@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TaskFactory extends Factory
 {
+    public static $value = 1;
     /**
      * Define the model's default state.
      *
@@ -18,7 +19,7 @@ class TaskFactory extends Factory
     {
         return [
             'name'  => fake()->sentence(),
-            'priority'  => fake()->randomNumber($min = 1, $max = 10)
+            'priority'  => self::$value++
         ];
     }
 }

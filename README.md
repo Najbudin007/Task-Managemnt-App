@@ -19,8 +19,8 @@ _______________________________________________________________________________
 Setup and Installation
 
 1. Clone the Repository
-git clone <repository-url>
-cd <repository-folder>
+git clone git@github.com:Najbudin007/Task-Managemnt-App.git
+cd Task-Managemnt-App
 
 2. Install Dependencies
 composer install
